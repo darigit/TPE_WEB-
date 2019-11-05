@@ -8,6 +8,7 @@ $r = new Router();
 $r->addRoute('comentario','GET','comentarioApiController','getComentarios');
 $r->addRoute('comentario/:ID','GET','comentarioApiController','getComentarios');
 $r->addRoute('comentario','POST','comentarioApiController','insertComentario');
+$r->addRoute('comentario/:ID','DELETE','comentarioApiController','deleteComentario');
 
 //run
 $r->route($_GET['resource'], $_SERVER['REQUEST_METHOD']);
