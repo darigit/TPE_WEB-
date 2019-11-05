@@ -1,0 +1,22 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Puntaje</th>
+            <th scope="col">nombre_post</th>            
+        </tr>
+    </thead>
+    <tbody>
+        {{#each comentario}}
+        <tr>
+            <td>{{descripcion}}</td>
+            <td>{{puntaje}}</td>
+            <td>{{nombre_post}}</td>            
+        </tr>
+        {{/each}}
+    </tbody>    
+</table>
+Su comentario:<input id="su_comentario" type="text">
+Su puntaje:<input id="su_puntaje" type="number">
+<div id="div_contenedor"></div>
+<button id="btnSuComentario" name="{{fk_libro}}" class="btn btn-primary" type="">Agregar</button>
